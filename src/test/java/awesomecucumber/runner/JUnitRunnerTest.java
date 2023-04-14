@@ -6,8 +6,12 @@
  * 
  * @RunWith(Cucumber.class)
  * 
- * @CucumberOptions( glue = {"awesomecucumber"}, features =
- * "src/test/resources/awesomecucumber" )
+ * @CucumberOptions(
+ * plugin = {"html:target/cucumber/cucumber.html"}, 
+ * glue = {"awesomecucumber"}, 
+ * features = "src/test/resources/awesomecucumber" ),
+ * monochrome = true
+ * 
  * 
  * public class JUnitRunnerTest { }
  */
